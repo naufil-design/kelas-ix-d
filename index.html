@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://elearning.mtsnegeri8jember.sch.id/__statics/img/logo.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css">
+  <script src="main.js" type="module" defer></script>
+  <title>MTsN 8 Jember (Kelas IX.D)</title>
+</head>
+<body>
+  <span class="logos">
+    <img src="https://elearning.mtsnegeri8jember.sch.id/__statics/img/logo.png" class="max-h-70px" alt=""> &nbsp;&nbsp;<img src="https://elearning.mtsnegeri8jember.sch.id/__statics/upload/logo1675832559.png" class="max-h-70px" alt="">
+  </span>
+  <div id="main-menu">
+    <div class="top-section">
+      <h1 class="title">MTsN 8 Jember</h1>
+      <h3 class="class-title">Kelas IX.D</h3>
+      <span class="switch-theme">
+        <i class="icon ion-md-moon"></i>
+      </span>
+    </div>
+    <div class="buttons-menu">
+      <div class="content-items">
+        <a onclick="changeTab('daftarSiswa')" class="content-item">Daftar Siswa</a>
+        <a href="https://elearning.mtsnegeri8jember.sch.id/" class="content-item">Website E-learning</a>
+        <a onclick="changeTab('jadwal')" class="content-item">Jadwal</a>
+        <a onclick="changeTab('strukturKls')" class="content-item">Struktur kelas</a>
+      </div>
+        <a onclick="changeTab('tentangPembuat')" class="credit">Credit</a>
+    </div>
+  </div>
+
+  <div id="students-list" style="display:none;padding: 5px;">
+    <a onclick="changeTab('mainMenu')" class="back-button">
+      <i class="icon ion-md-arrow-back"></i>
+    </a>
+    <div style="margin-top:50px">
+      <p class="info"> untuk Arya Mahendra, saya tidak tahu tgl. lahirnya, soalnya password akun E-learningnya diubah.</p>
+      <div class="table-limiter">
+        <table>
+          <tr class="table-identifier">
+            <th>No.</th>
+            <th>Nama</th>
+            <th>Tgl. Lahir</th>
+            <th>Umur</th>
+          </tr>
+          <!-- Baris siswa akan ditambahkan oleh JavaScript -->
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div id="timetable" style="display:none;padding: 5px;">
+    <a onclick="changeTab('mainMenu')" class="back-button">
+      <i class="icon ion-md-arrow-back"></i>
+    </a>
+    <div style="margin-top:50px">
+      <h4>Jadwal pelajaran</h4>
+      <div class="table-limiter" showAll>
+        <table>
+          <tr class="table-identifier">
+            <th>Jam ke</th>
+            <th>Senin</th>
+            <th>Selasa</th>
+            <th>Rabu</th>
+            <th>Kamis</th>
+            <th>Jum'at</th>
+          </tr>
+          <tr>
+            <td>1.</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Akidah</td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Akidah</td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>SKI</td>
+          </tr>
+          <tr>
+            <td>4.</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>SKI</td>
+          </tr>
+          <tr>
+            <td>Istirahat</td>
+            <td>Istirahat</td>
+            <td>Istirahat</td>
+            <td>Istirahat</td>
+            <td>Istirahat</td>
+          </tr>
+          <tr>
+            <td>5.</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>6.</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Istirahat</td>
+            <td>Istirahat</td>
+            <td>Istirahat</td>
+            <td>Istirahat</td>
+            <td>Istirahat</td>
+          </tr>
+          <tr>
+            <td>7.</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>8.</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>9.</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>10.</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>11.</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+      <h4>Jadwal piket</h4>
+      <div class="table-limiter">
+        <table>
+          <tr class="table-identifier">
+            <th>Senin</th>
+            <th>Selasa</th>
+            <th>Rabu</th>
+            <th>Kamis</th>
+            <th>Jum'at</th>
+          </tr>
+          <tr>
+            <td>Andika</td>
+            <td>Mustaqim</td>
+            <td>Ridwan</td>
+            <td>Reyhan</td>
+            <td>Reza</td>
+          </tr>
+          <tr>
+            <td>Arya</td>
+            <td>Sholeman</td>
+            <td>Alam</td>
+            <td>Rifki</td>
+            <td>zhafran</td>
+          </tr>
+          <tr>
+            <td>Bagas</td>
+            <td>Sulton</td>
+            <td>Naufil</td>
+            <td>Rihan</td>
+            <td>Zidni</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Farel</td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div id="about-dev" style="display:none;">
+    <a onclick="changeTab('mainMenu')" class="back-button">
+      <i class="icon ion-md-arrow-back"></i>
+    </a>
+    <span href="#" class="logo">
+      <img src="./logo.png" alt="Naufil Efendi">
+      <h1>Naufil Efendi</h1>
+    </span>
+    <span class="logos">
+      <a style="width:15px;height:15px" href="https://www.youtube.com/channel/UCtw3vmCM3cU_ZKtaHKeLGbA" class="icon ion-logo-youtube"></a>
+      <a style="width:15px;height:15px" href="https://wa.me/8155176763" class="icon ion-logo-whatsapp"></a>
+      <a style="width:15px;height:15px" href="https://www.instagram.com/fil_cuy?igsh=MW9ha3U5azV0bWh0bw==" class="icon ion-logo-instagram"></a>
+    </span>
+  </div>
+  <div id="class-structure" style="display:none;">
+    <a onclick="changeTab('mainMenu')" class="back-button">
+      <i class="icon ion-md-arrow-back"></i>
+    </a>
+    <div class="cs-content">
+    <h2>Wali kelas:</h2>
+    <p>Maratunhasanah</p>
+    <span>
+      <h3>Ketua kelas:</h3>
+      <h3>Wakil ketua kelas:</h3>
+    </span>
+    <span>
+      <p>Andika</p>
+      <p>Rihan</p>
+    </span>
+    </div>
+  </div>
+</body>
+</html>
