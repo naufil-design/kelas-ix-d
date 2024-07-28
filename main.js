@@ -49,7 +49,7 @@ window.populateTable = function() {
   const students = [
     { name: 'Adelfio Fatihul Ihsan', birthDate: 'Orangnya gk inget \n-_-', birthYear: years_list[0] },
     { name: 'Andika Pratama', birthDate: `15 Februari ${years_list[1]}`, birthYear: years_list[1] },
-    { name: 'Arya Mahendra', birthDate: `Tidak tau ${years_list[2]}`, birthYear: years_list[2] },
+    { name: 'Arya Mahendra', birthDate: `Tidak tau`, birthYear: years_list[2] },
     { name: 'Bagas Septa Ramadana', birthDate: `16 September ${years_list[3]}`, birthYear: years_list[3] },
     { name: 'Dicky Alif Farizi', birthDate: `10 Desember ${years_list[4]}`, birthYear: years_list[4] },
     { name: 'Dzainul Mustakim', birthDate: `25 Agustus ${years_list[5]}`, birthYear: years_list[5] },
