@@ -70,13 +70,6 @@ body {
   text-align: center;
 }
 
-.title {
-  background: linear-gradient(45deg, #ff0, #b0b, #0ff);
-      -webkit-background-clip: text;
-      color: transparent;
-      -webkit-text-fill-color: transparent;
-}
-
 .switch-theme {
       display: flex;
       position: absolute;
@@ -286,4 +279,8 @@ tr .umur:before {
 .cs-content > p {
   margin-inline: 30px;
   transform: translateY(-10px);
+}
+
+.low-opacity {
+  opacity: 0.5;
 }
